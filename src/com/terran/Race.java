@@ -8,6 +8,11 @@ public class Race extends AirUnit {
 		System.out.println("이동");
 	}
 	
+	@Override
+	public void attack() {
+		// TODO Auto-generated method stub
+		
+	}
 	public void attact() {
 		System.out.println("공격");
 	}

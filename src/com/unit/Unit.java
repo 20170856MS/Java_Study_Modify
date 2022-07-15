@@ -7,6 +7,7 @@ public abstract class Unit {
 	private String color;
 	private String name;
 	
+	
 	public Unit (int hp) {
 		System.out.println("Super 생성자");
 		this.hp=hp;
@@ -18,6 +19,8 @@ public abstract class Unit {
 	public void info() {
 		System.out.println("Super Info");
 	}
+	
+	public abstract void attack();
 	
 	
 	public int getHp() {
