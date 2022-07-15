@@ -2,31 +2,29 @@ package com.main;
 
 import java.util.Scanner;
 
-import com.terran.Marine;
-import com.unit.Unit;
+import com.util.CollectionStack;
 
 
 public class Main {
 
 	public static void main(String[] args) {
-		Marine m1 =new Marine();
-		m1.setHp(50);
-		m1.setColor("black");
-		m1.info();
-		m1.move();
+		//1. com.util.CollectionStack 클래스생성
+		//		add - 입력받은 새로운 숫자 추가 무조건 0번에 추가
+		//		remove - 0번 인덱스를 삭제
+		//2. com.util.CollectionQue
+		//		add - 입력받은 새로운 숫자를 0번에 추가
+		//	 	remove - 마지막 인덱스를 삭제
+		//3. com.util.CollectionSet
+		//		add - 마지막 인덱스에 새로운 숫자 추가 #단 중복되지 않는 숫자만 추가
+		//		remove - 삭제할 숫자를 입력받아서 일치하는 숫자 삭제
 		
-		Unit unit = m1;
-		//Marine is a Unit
-		//Unit이 접근 가능한건 자신이 알고있는 것 까지
 		
-		System.out.println(unit.getHp());
-		System.out.println(unit.getColor());
-		System.out.println(unit.getName());
-		System.out.println(unit.getClass());
-	
+		//test data set
+		int [] numbers = {1, 2, 3};
+		CollectionStack cs = new CollectionStack();
 		
-		m1 = (Marine)unit;  //형변환
-		System.out.println(m1.getWeapon());
+		cs.add(numbers);
+		
 	}
 	
 
