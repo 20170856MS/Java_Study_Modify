@@ -2,17 +2,31 @@ package com.main;
 
 import java.util.Scanner;
 
-import com.terran.Marine;
+import com.himart.Client;
+import com.himart.Computer;
+import com.himart.Phone;
+import com.himart.Tv;
+
+
 
 
 public class Main {
 
 	public static void main(String[] args) {
-		Marine m1 =new Marine();
-		m1.setHp(50);
-		m1.setColor("black");
-		m1.info();
-		m1.move();
+		
+		Computer com = new Computer();
+		Tv tv = new Tv();
+		Phone phone = new Phone();
+		
+		com.info();
+		tv.info();
+		phone.info();
+		
+		Client cl = new Client();
+		
+		cl.buy(tv);
+
+		
 	}
 
 }
