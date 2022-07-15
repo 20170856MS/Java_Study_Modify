@@ -5,6 +5,8 @@ public class Iu {
 	private String name;
 	private int age;
 	
+	private String test;
+	
 	//Setter : 값을 집어넣기 위함
 	//public void set변수명(데이터타입 변수면)
 	//Getter : 데이터를 꺼내가기 위함
