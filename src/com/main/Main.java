@@ -24,7 +24,7 @@ public class Main {
 		
 		Client cl = new Client();
 		
-		cl.buy(tv);
+		cl.buy(phone);
 
 		
 	}
