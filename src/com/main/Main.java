@@ -14,6 +14,7 @@ public class Main {
 		//cat.age=5;
 		Human human = new Human();
 		//human.age = 20;
+		System.out.println("나이를 입력하세요");
 		Scanner sc = new Scanner(System.in);
 		int pull = sc.nextInt();
 		human.setAge(pull);
@@ -23,6 +24,10 @@ public class Main {
 		
 		System.out.println(Zoo.title);
 		Zoo.info();
+		
+		Zoo zoo = new Zoo();
+		//final => 변경 불가능
+		//zoo.price=10000;
 		
 	}
 
