@@ -21,6 +21,8 @@ public class Main {
 		
 		//test data set
 		int [] numbers = {1, 2, 3};
+		String name = new String();
+		char ch = name.charAt(1);
 		CollectionStack cs = new CollectionStack();
 		
 		cs.add(numbers);

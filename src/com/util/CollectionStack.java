@@ -19,7 +19,8 @@ public class CollectionStack implements Collection {
 
 	@Override
 	public int[] remove(int[] numbers) {
-		// TODO Auto-generated method stub
+		System.out.println("숫자를 삭제합니다");
+		
 		return null;
 	}
 
